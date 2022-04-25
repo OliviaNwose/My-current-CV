@@ -1,3 +1,4 @@
+
 :root {
   font-size: 16px;
   font-family: 'Open Sans';
@@ -11,7 +12,7 @@
 body {
   color: black;
   background-color: white;
-  margin: 0;
+  margin-bottom:0;
   padding: 0;
 }
 
@@ -42,7 +43,7 @@ main {
 .navbar-nav {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin:0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +76,11 @@ main {
 
 .link-text {
   display: none;
-  margin-left: 1rem;
+  margin-left: 1rem
+}
+.text{
+  margin-right: 1rem;
+  margin-left: 5px;
 }
 
 .nav-link svg {
@@ -84,12 +89,13 @@ main {
   margin: 0 1.5rem;
 }
 
-.fa-primary {
+.fa {
   color: #ff7eee;
 }
 
-.fa-secondary {
+.fa{
   color: #df49a6;
+  margin-left: 1rem;
 }
 
 .fa-primary,
@@ -125,6 +131,10 @@ main {
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
 }
+.main{
+  padding:20px;
+}
+
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
@@ -145,9 +155,11 @@ main {
   .nav-link {
     justify-content: center;
   }
+  
 
-  main {
-    margin: 0;
+  .main {
+    margin:20px;
+    padding:0;
   }
 }
 
@@ -213,4 +225,52 @@ main {
 
 .solar #solarIcon {
   display: block;
+}
+
+.skills .box
+{
+width: 100%;
+display:grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+}
+.skills .box
+{
+text-transform: uppercase;
+color:black;
+font-weight:500;
+}
+
+.skills .box .percent 
+{
+    width:50%;
+    height:10px;
+    background:#0f0f0f;
+}
+.skills .box .percent div
+{
+    top: 0;
+    left:0;
+    height:100%;
+    background:#03a9f4;
+}
+.image{
+  border-radius: 80%;
+  box-shadow: 10px 10px 10px #b6b6b6;
+}
+p, h2, h3{
+  color:#03016f;
+}
+.far, a{
+  color:black
+}
+.namepic{
+position: relative;
+background:#fff;
+display: flex;
+}
+.name{
+  margin-left:2%;
+  margin-top: 3%;
 }
