@@ -1,4 +1,6 @@
-
+*{
+   margin-left:0;
+}
 :root {
   font-size: 16px;
   font-family: 'Open Sans';
@@ -12,8 +14,7 @@
 body {
   color: black;
   background-color: white;
-  margin-bottom:0;
-  padding: 0;
+  font-family: 'Inconsolata', monospace;;
 }
 
 body::-webkit-scrollbar {
@@ -28,9 +29,8 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
-main {
-  margin-left: 5rem;
-  padding: 1rem;
+.main{
+  padding-left: 7rem;
 }
 
 .navbar {
@@ -89,13 +89,13 @@ main {
   margin: 0 1.5rem;
 }
 
-.fa {
-  color: #ff7eee;
-}
-
 .fa{
   color: #df49a6;
-  margin-left: 1rem;
+  margin-left:1rem;
+}
+.ol{
+  font-size: 14px;
+  color: #df49a6;
 }
 
 .fa-primary,
@@ -131,9 +131,6 @@ main {
 .navbar:hover .logo svg {
   transform: rotate(-180deg);
 }
-.main{
-  padding:20px;
-}
 
 
 /* Small screens */
@@ -142,6 +139,7 @@ main {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    font-size: 10px;
   }
 
   .logo {
@@ -155,11 +153,16 @@ main {
   .nav-link {
     justify-content: center;
   }
-  
-
-  .main {
-    margin:20px;
-    padding:0;
+  .main{
+    margin-bottom:60px;
+    padding:1rem;
+  }
+  .mbimage{
+    display:block;
+    height:2rem;
+    width:50%;
+    border-radius: 50%;
+    margin: 1rem;
   }
 }
 
@@ -188,9 +191,12 @@ main {
   {
     left: 0px;
   }
+  .mbimage{
+    display:none;
+  }
 }
 
-.dark {
+.dark{
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -256,9 +262,10 @@ font-weight:500;
     background:#03a9f4;
 }
 .image{
-  border-radius: 80%;
-  box-shadow: 10px 10px 10px #b6b6b6;
+  border-radius: 50%;
+  height: 100px;
 }
+
 p, h2, h3{
   color:#03016f;
 }
@@ -266,11 +273,6 @@ p, h2, h3{
   color:black
 }
 .namepic{
-position: relative;
 background:#fff;
 display: flex;
-}
-.name{
-  margin-left:2%;
-  margin-top: 3%;
 }
