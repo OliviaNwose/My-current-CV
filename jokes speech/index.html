@@ -13,8 +13,11 @@
   </head>
     <body>
       <div class="container">
-        <div class="row">
-            <h1>
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-12 mb-3 img">
+            <img src="/jokes speech/laugh-removebg-preview.png" alt="" style="width:50%; margin-top:3%">
+          </div>
+            <!-- <h1>
               <span>W</span>
               <span>E</span>
               <span>L</span>
@@ -34,16 +37,20 @@
               <span>&#128514</span>
               <span>W</span>
               <span>N</span>
-            </h1>
+            </h1> -->
         </div>
-      </div>
-      <div id="app">
-             <button class="btn shadow" @click = "getJokes" >Tell me a joke</button>
-             <div class="card shadow mt-5">
-                <div class="card-body" name="text">
-                  {{jokee}}
-                </div>
-             </div>
+        <div class="row">
+          <div class="col-12">
+            <div id="app">
+              <button class="btn shadow" @click = "getJokes" >Tell me a joke</button>
+              <div class="card shadow mt-5">
+                 <div class="card-body" name="text">
+                   {{jokee}}
+                 </div>
+              </div>
+           </div>
+         </div>
+       </div>
       </div>
       
     <!-- Optional JavaScript -->
